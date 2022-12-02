@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0C1863">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="საპატრულო ჯარიმები"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/AB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="AB"
+                android:backgroundTint="#B35959"
+                android:textColorHint="#B35959"
+                android:textColor="#B35959"
+                android:textSize="25sp"
+                android:layout_weight="1">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/YYY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="001"
+                android:backgroundTint="#B35959"
+                android:textColorHint="#B35959"
+                android:textColor="#B35959"
+                android:textSize="25sp"
+                android:layout_weight="1">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/AB1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="AB"
+                android:layout_weight="1"
+                android:backgroundTint="#B35959"
+                android:textColorHint="#B35959"
+                android:textColor="#B35959"
+                android:textSize="25sp">
+
+            </EditText>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="პირადი ნომერი"
+                android:textColorHint="#B35959"
+                android:backgroundTint="#B35959"
+                android:textColor="#B35959"
+                android:textSize="22sp"
+                android:layout_marginBottom="35dp">
+
+            </EditText>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="შემოწმება"
+            android:textColor="@color/black"
+            android:backgroundTint="#17CA0A"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
