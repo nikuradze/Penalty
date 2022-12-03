@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
 
         check.setOnClickListener {
             if(AB.text.toString().length != 2 || AB1.text.toString().length != 2
+                || AB.text.isDigitsOnly() || AB1.text.isDigitsOnly()
+                || !AB.text.toString().all {it.isUpperCase()} || !AB1.text.toString().all {it.isUpperCase()}
                 || YYY.text.toString().length !=3 || AB.text.toString() == ""
                 || AB1.text.toString() == "" || YYY.text.toString() == ""
                 || !YYY.text.toString().isDigitsOnly()){
